@@ -114,7 +114,10 @@ python -m http.server 8000
 
 Open in browser: **[http://127.0.0.1:8000/index.html](http://127.0.0.1:8000/index.html)**
 
+## ✍🏻 Run-time Screenshots
+(vs code window is open at side showing the backend logs of the llm)
 ![WhatsApp Image 2025-08-19 at 14 37 05_1cbdd299](https://github.com/user-attachments/assets/fdc08f85-fef7-4678-8444-c231a48e3b77)
+![WhatsApp Image 2025-08-19 at 01 48 05_077618de](https://github.com/user-attachments/assets/f061435e-bcb4-4cf8-a3ed-59593184231d)
 
 
 ---

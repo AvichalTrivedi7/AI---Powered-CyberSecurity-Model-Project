@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metro Door Security System - Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1>Metro Door Security System</h1>
+        <p class="subtitle">LLM-Guarded Controls (Mistral 7B)</p>
+      </header>
+
+      <section class="stage" aria-label="Metro door visualization">
+        <div class="platform-label" aria-hidden="true">Platform Edge</div>
+        <div class="door" id="door" aria-live="polite" aria-label="Metro door" data-state="closed">
+          <div class="door__panel door__panel--left"></div>
+          <div class="door__panel door__panel--right"></div>
+          <div class="door__frame"></div>
+        </div>
+        <div class="status">
+          <span id="doorState">Door: CLOSED</span>
+          <span id="llmState" class="pill">LLM: idle</span>
+        </div>
+      </section>
+
+      <!-- Predefined valid controls -->
+      <section class="controls" aria-label="Controls">
+        <button id="openBtn" class="btn btn--primary" type="button">Send Open Signal</button>
+        <button id="closeBtn" class="btn" type="button">Send Close Signal</button>
+      </section>
+
+      <!-- NEW: custom hacker/suspicious input -->
+      <section class="controls" aria-label="Custom Command">
+        <input id="customInput" class="btn" type="text" placeholder="Type custom command (e.g. hack override system)" style="min-width:300px;" />
+        <button id="customBtn" class="btn btn--primary" type="button">Send Custom Command</button>
+      </section>
+
+      <section class="log" aria-label="Event log">
+        <h2>Event Log</h2>
+        <div id="logList" class="log__list" role="log" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

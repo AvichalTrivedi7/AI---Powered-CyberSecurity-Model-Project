@@ -1,4 +1,4 @@
-# 🚇 Metro Door Cyber-Security System (LLM-Powered)
+# 🚇 Metro Door Cyber-Security System (LLM-Powered) - Hackathon winning project.
 
 An intelligent **AI-powered metro door security system** built with a local **Mistral 7B (GGUF)** model via `llama-cpp-python`. OEM-installed switches are often bound and difficult to change and make more secure. Retrofitting legacy systems with modern security protocols is often costly and complex. Here taking such an example (metro-door) representing all these small data-transferring devices, the proposed model makes it secure using a fully Local AI Model.
 The system simulates a **metro platform door** UI and uses an LLM to classify incoming control commands as:
